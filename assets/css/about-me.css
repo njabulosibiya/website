@@ -1,0 +1,652 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 3rem;
+
+    --first-hue: 250;
+    --sat: 66%;
+    --lig: 75%;
+    --second-hue: 219;
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+    /* HSL color mode */
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+
+
+
+
+
+
+
+
+
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+/*
+article, aside, figcaption, figure, footer, hgroup, main, section {
+  display: block; }
+*/
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  /*font-weight: 400;
+  line-height: 1.5;*/
+  color: var(--text-color);
+  text-align: left;
+  background-color: var(--body-color) }
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none; }
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit; }
+
+dt {
+  font-weight: 700; }
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0; }
+
+blockquote {
+  margin: 0 0 1rem; }
+
+b,
+strong {
+  font-weight: bolder; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em; }
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto; }
+
+figure {
+  margin: 0 0 1rem; }
+
+img {
+  vertical-align: middle;
+  border-style: none; }
+
+table {
+  border-collapse: collapse; }
+
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom; }
+
+th {
+  text-align: inherit; }
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2; }
+
+h1, .h1 {
+  font-size: 2.5rem; }
+
+h2, .h2 {
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 1.75rem; }
+
+h4, .h4 {
+  font-size: 1.5rem; }
+
+h5, .h5 {
+  font-size: 1.25rem; }
+
+h6, .h6 {
+  font-size: 1rem; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #f3f3f3;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto; }
+
+.figure {
+  display: inline-block; }
+
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1; }
+
+.figure-caption {
+  font-size: 90%;
+  color: #6c757d; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.col-lg-6{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+@media (min-width: 992px) {
+ .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+}
+
+.media {
+  display: flex;
+  align-items: flex-start; }
+
+.media-body {
+  flex: 1; }
+
+.text-center {
+  text-align: center !important; }
+
+@media (min-width: 576px) {
+  .text-sm-center {
+    text-align: center !important; } }
+
+body {
+  padding: 20px 60px; }
+  @media (max-width: 991px) {
+    body {
+      padding-top: 87px; } }
+  @media (max-width: 767px) {
+    body {
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+      .content-wrapper {
+  display: flex; }
+  @media (max-width: 767px) {
+    .content-wrapper {
+      flex-direction: column; } }
+main {
+  flex-grow: 1; }
+
+main {
+  padding: 36px 60px 24px;
+  background-color: var(--container-color);
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1) ;
+  border-radius: 1rem; }
+  @media (max-width: 767px) {
+    main {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  main .section-title {
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 2.125rem; }
+  main p {
+    font-size: 13px;
+    line-height: 1.538;
+    font-weight: 300; }
+  main .intro-section {
+    margin-bottom: 29px; }
+    main .intro-section .section-title {
+      margin-bottom: 1rem; }
+  main .resume-section {
+    margin-bottom: 47px; }
+  main .time-line {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 24px; }
+    main .time-line-item {
+      line-height: 0;
+      padding-left: 40px;
+      padding-bottom: 24px;
+      position: relative; }
+      main .time-line-item::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        left: 5px;
+        transform: translateX(-50%);
+        width: 1px;
+        background-color: #f3f3f3; }
+      main .time-line-item::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #979797; }
+      main .time-line-item:nth-child(2n)::after {
+        background-color: var(--first-color); }
+      main .time-line-item:not(:first-child)::after {
+        top: 5px; }
+      main .time-line-item:last-child {
+        padding-bottom: 0; }
+      main .time-line-item .badge {
+        padding: 6px 10px;
+        font-size: 8px;
+        font-weight: 500;
+        line-height: 1;
+        border-radius: 2px;
+        margin-bottom: 8px; }
+      main .time-line-item-title {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 2px; }
+      main .time-line-item-subtitle {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 1.6;
+        color: #a7a7a7;
+        margin-bottom: 3px; }
+  main .services-section {
+    margin-bottom: 34px; }
+  main .service-card {
+    padding-top: 11px;
+    padding-bottom: 11px; }
+    main .service-card:first-child, main .service-card:nth-child(3) {
+      border-right: 1px solid #f3f3f3; }
+      @media (max-width: 991px) {
+        main .service-card:first-child, main .service-card:nth-child(3) {
+          border-right: 0; } }
+    @media (max-width: 991px) {
+      main .service-card {
+        border-bottom: 1px solid #f3f3f3; }
+        main .service-card:last-child {
+          border-bottom: 0; } }
+    main .service-card .service-icon {
+      width: 29.9px;
+      height: 29.9px;
+      margin-right: 17.1px;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center; }
+    main .service-card .service-title {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 8px; }
+  main .testimonial-section {
+    background-color: #080808;
+    color: #ffffff;
+    margin-bottom: 26px; }
+  main .testimonial-carousel {
+    padding: 30px; }
+    main .testimonial-carousel .carousel-item {
+      text-align: center; }
+    main .testimonial-carousel .testimonial-content {
+      font-size: 10px;
+      font-weight: 300;
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5px; }
+    main .testimonial-carousel .testimonial-img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-bottom: 3px; }
+    main .testimonial-carousel .testimonial-name {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #0067f6; }
+    main .testimonial-carousel .carousel-indicators {
+      position: static;
+      margin-bottom: 0; }
+      main .testimonial-carousel .carousel-indicators li {
+        width: 3px;
+        border-radius: 50%;
+        border: 0; }
+  main footer {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center; }
+  main .clients-section {
+    margin-bottom: 45px; }
+  main .client-logos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    main .client-logos-wrapper .client-logo {
+      width: calc(25% - 10px);
+      border: 1px solid #f3f3f3;
+      padding: 10px 15px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; }
+      @media (max-width: 991px) {
+        main .client-logos-wrapper .client-logo {
+          width: calc( 50% - 10px); } }
+      @media (max-width: 767px) {
+        main .client-logos-wrapper .client-logo {
+          width: calc( 25% - 10px); } }
+      @media (max-width: 575px) {
+        main .client-logos-wrapper .client-logo {
+          width: calc( 50% - 10px); } }
+      main .client-logos-wrapper .client-logo img {
+        max-width: 100%;
+        max-height: 21px; }
+  main .achievements-section {
+    margin-bottom: 29px; }
+  main .achievement-cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 15px;
+    background-color: #f7f7f9; }
+    @media (max-width: 991px) {
+      main .achievement-cards-wrapper {
+        flex-direction: column; } }
+    @media (max-width: 767px) {
+      main .achievement-cards-wrapper {
+        flex-direction: row; } }
+    @media (max-width: 575px) {
+      main .achievement-cards-wrapper {
+        flex-direction: column; } }
+  @media (max-width: 991px) {
+    main .achievement-card {
+      margin-bottom: 35px; }
+      main .achievement-card:last-child {
+        margin-bottom: 0; } }
+  @media (max-width: 767px) {
+    main .achievement-card {
+      margin-bottom: 0; } }
+  @media (max-width: 575px) {
+    main .achievement-card {
+      margin-bottom: 35px; }
+      main .achievement-card:last-child {
+        margin-bottom: 0; } }
+  main .achievement-card-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; }
+  main .achievement-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1; }
+  main .achievement-card-description {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #070707; }
+  main .contact-section {
+    margin-bottom: 31px; }
+    main .contact-section p {
+      font-size: 12px;
+      font-weight: 300; }
+  main .contact-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between; }
+  main .contact-card {
+    border: 1px solid #f3f3f3;
+    padding: 25px 30px 20px;
+    margin-bottom: 28px;
+    width: calc(50% - 12.5px); }
+    @media (max-width: 991px) {
+      main .contact-card {
+        width: 100%; } }
+    @media (max-width: 767px) {
+      main .contact-card {
+        width: calc(50% - 12.5px); } }
+    @media (max-width: 575px) {
+      main .contact-card {
+        width: 100%; } }
+    main .contact-card-title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0; }
+    main .contact-card-content {
+      font-size: 12px;
+      line-height: 1.83;
+      margin-bottom: 0; }
+  main .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    main .contact-form .form-group {
+      margin-bottom: 21px;
+      width: 100%;
+      padding: 0; }
+      main .contact-form .form-group-name, main .contact-form .form-group-email {
+        width: calc(50% - 12.5px); }
+        @media (max-width: 991px) {
+          main .contact-form .form-group-name, main .contact-form .form-group-email {
+            width: 100%; } }
+        @media (max-width: 767px) {
+          main .contact-form .form-group-name, main .contact-form .form-group-email {
+            width: calc(50% - 12.5px); } }
+        @media (max-width: 575px) {
+          main .contact-form .form-group-name, main .contact-form .form-group-email {
+            width: 100%; } }
+    main .contact-form .form-control {
+      border: 0;
+      border-radius: 0;
+      background-color: #f3f3f3;
+      padding: 12px 14px;
+      color: #000000;
+      font-size: 8px;
+      line-height: 1.5;
+      min-height: 36px; }
+    main .contact-form .form-submit-btn {
+      border-radius: 0;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 10px 29px; }
+  main .location-section {
+    margin-bottom: 66px; 
+  }
+  main .location-section .section-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.9;
+    margin-bottom: 14px; 
+  }
+  main .location-section .map-wrapper {
+    height: 150px; 
+  }
+
+  .video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*image display*/
+#fancybox__container {
+  display: flex; /* displays children inline (side by side) */
+  width: 100%; /* adjust to your needs */
+  max-width: 100%; /* for responsiveness */
+  margin: 0 auto; /* horizontal centering on the page */
+}
+
+
+
+.skills__list
+.imglist {
+    display: flex; /* displays a's (img's) inline */
+    flex-wrap: wrap; /* enables wrapping */
+}
+
+.skills__list
+.imglist > a {
+    flex: 1 1 calc(33.33% - 6px); /* each anchor tag (img) takes 33.33% of the parents (.imglist) width, that's why it wraps after every third anchor tag (img) / why -6px? because of the 2 x 3px margin (left & right) */
+    margin: 3px; /* adjust to your needs */
+    /* flex: grow(enabled (1)) shrink(enabled (1)) basis/width (calc(33.33% - 6px)); */
+}
+
+.skills__list
+img { /* for responsiveness */
+    display: block;
+    max-width: 100%;
+    max-height: 100vh;
+}
+  
+/* addition (recommended) */
+@media screen and (max-width: 568px) { /* adjust the "breaking-point" to your needs */
+    #fancybox__container {
+      flex-direction: column; /* stacks children (group1 & group2) vertically */
+    }
+}

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal website">
+  	<meta name="keywords" content="portfolio, Njabulo, Njabulo Sibiya, Personal Website">
+ 	<meta name="author" content="Njabulo Sibya & Brimcode">
+
+    <!--==================== FAVICON ====================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/back-to-top.css">
+
+    <title>Njabulo Sibiya | Portfolio</title>
+    
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">Njabulo</div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Contact Me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!--Theme change button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </div>
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://github.com/njabulosibiya" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/home_cover.png"/>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hello, <br> i'm Njabulo</h1>
+                        <h3 class="home__subtitle">A Computer Science Student</h3>
+                        <p class="home__description">This is my portfolio website where I post all my software developement projects.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home_scroll home_scroll_bounce">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title"> About Me</h2>
+            <span class="section__subtitle">A brief introduction</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description" style="text-align: justify;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam      
+                        <span class="button button--flex button--small button--link"> <!--services__button-->   
+                            <i class="uil uil-plus button__icon"></i>
+                        </span>
+
+                        <!--<div class="services__modal" style="overflow-y: auto;">
+                            <div class="services__modal-content" style="overflow: auto;  max-height: 90%;">
+                                <h4 class="services__modal-title">A little more <br> about me</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>passionate about computer programming</p>
+                                    </li>
+  
+                                    <div class="row">
+                                        <div class="media service-card col-lg-6">
+                                            <div class="service-icon">
+                                                <i class="uil uil-layers-alt button__icon"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="service-title">Front-End UI/UX Development</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                                    tempor incididunt. Incididunt consectetur </p>
+                                            </div>
+                                        </div>
+                                        <div class="media service-card col-lg-6">
+                                            <div class="service-icon">
+                                                <i class="uil uil-robot button__icon"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="service-title">Machine Learning & AI</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                                    tempor incididunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="media service-card col-lg-6">
+                                            <div class="service-icon">
+                                                <i class="uil uil-streering button__icon"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="service-title">Automation</h5>
+                                                <p>Lorem ipsum consectetur incididunt dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                                    tempor incididunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="media service-card col-lg-6">
+                                            <div class="service-icon">
+                                                <i class="uil uil-eye button__icon"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="service-title">Computer Vision</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing dolor, sed do eiusmod 
+                                                    tempor amet incididunt. Sed
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="media service-card col-lg-6">
+                                            <div class="service-icon">
+                                                <i class="uil uil-database button__icon"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="service-title">Databases</h5>
+                                                <p>Lorem ipsum dolor incididunt sit amet, ipsum dolor consectetur adipiscing elit, sed do eiusmod 
+                                                    tempor dolor incididunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="media service-card col-lg-6">
+                                            <div class="service-icon">
+                                                <i class="uil uil-cloud-database-tree button__icon"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="service-title">Server-Client Applications</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                                    tempor incididunt amet dolor.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>-->
+                    </p>
+
+                    <div class="about__info">
+                        <div >
+                            <span class="about__info-title">00+</span>
+                            <span class="about__info-name">Years <br> experience </span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">00+</span>
+                            <span class="about__info-name">Companies <br> worked </span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">00+</span>
+                            <span class="about__info-name">Completed <br> projects </span>
+                        </div>
+                    </div>
+                    <div class="about__buttons">
+                        <a href="#about" target="_blank" class="button button--flex services__button">
+                            Download CV <i class="uil uil-file-download-alt button__icon"></i>
+                        </a>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Download <br> CV</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-times-circle services__modal-icon"></i>
+                                        <p>Currently Unavailable</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <!--====================== SKILLS 1 =============================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Software Development</h1>
+                                <span class="skills__subtitle">More than 2 years (University)</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C++</h3>
+                                    <div class="skills__number">Advanced<!--was 85%--></div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__cpp"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <div class="skills__number">beginner<!--was 20%--></div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__python"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">mySQL</h3>
+                                    <div class="skills__number">beginner <!--was 15%--></div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__mysql"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--====================== SKILLS 2 =============================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">UI Development</h1>
+                                <span class="skills__subtitle">still learning...</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">QT QML</h3>
+                                    <div class="skills__number">Intermediate <!--was 50%--></div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage skills__qml"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--====================== SKILLS 3 =============================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Other Technical Skills</h1>
+                                    <span class="skills__subtitle">All other notable skills </span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Linux</h3>
+                                        <div class="skills__number">beginner<!--was 85%--></div>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__linux"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section__title">Qualifications</h2>
+            <div class="section__subtitle">My personal journey</div>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#career">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--===============================QUALIFICATION CONTENT 1 ===========================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--===============================QUALIFICATION 1 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Higher Secondary School Certificate</h3>
+                                <span class="qualification__subtitle">Umlazi Comprehensive Technical High School</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    January, 2015 - December, 2019
+                                </div>
+                                
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Notable <br> Achievements</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>valedictorian - Computer Applications & Technology</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 2 ===========================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">BSc. in Computer Science & Mathematics</h3>
+                                <span class="qualification__subtitle">The University of South Africa - UNISA</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Febuary, 2020 - Present
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <!--===============================QUALIFICATION CONTENT 2 ===========================-->
+                    <div class="qualification__content" data-content id="career">
+                        <!--===============================QUALIFICATION 1 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Lorem ipsum</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="#career" >Lorem ipsum</a>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    September, 2019 - July, 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 2 ===========================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">
+
+                                    <a class="qualification__tech" href="#career">PHP</a>
+                                    &
+                                    <a class="qualification__tech" href="#career" >Laravel</a>
+                                    Lorem
+                                </h3>
+                                <span class="qualification__subtitle">
+                                    <a href="#career" >Lorem ipsum dolor sit amet</a>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    October, 2020 - running
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 3 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Software Development</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="#career">Lorem.ipsum IT</a>
+                                    <small>(Lorem ipsum dolor sit amet)</small></span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    August, 2021 - Running
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">A Curation of My Projects</span>
+        
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">C++</span>
+                <span class="work__item" data-filter=".movil">Other</span>
+                <span class="work__item" data-filter=".design">Upcoming</span>
+            </div>
+
+            <div class="work__container workcontainer workgrid">
+                <div class="work__card mix web">
+                    <img src="assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Web Design</h3>
+
+                    <a href="project.html"
+                    class="button button--flex button--small button--link services__button">
+                        View Project
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+
+                </div>
+
+                <div class="work__card mix movil">
+                    <img src="assets/img/work2.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">App Movil</h3>
+
+
+                    <a href="project.html"
+                    class="button button--flex button--small button--link services__button">
+                        View Project
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Brand Design</h3>
+
+                    <a href="project.html"
+                    class="button button--flex button--small button--link services__button">
+                        View Project
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/work4.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Web Design</h3>
+
+                    <a href="project.html"
+                    class="button button--flex button--small button--link services__button">
+                        View Project
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix movil">
+                    <img src="assets/img/work5.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">App Movil</h3>
+
+                    <a href="project.html"
+                    class="button button--flex button--small button--link services__button">
+                        View Project
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== WORK IN PROGRESS BANNER ====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">Thanks for for stopping by</h2>
+                        <p class="project__description">please keep in mind that this site is still a work in progress
+                            all elements present are <b><u>NOT</u></b> final & are subject to change.
+                        </p>
+                    </div>
+
+                    <img src="assets/img/project3.png" alt="" class="project__img">
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section">
+            <!--=======This feature is skipped for now========-->
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <!--<div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+123-456 789 0101</span>
+                        </div>
+                    </div>-->
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">get in touch by sending me an email below.</span>
+                        </div>
+                    </div>
+
+                    <!--<div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Bloemfontien, South Africa</span>
+                        </div>
+                    </div>-->
+
+                    
+                    <form action="https://formsubmit.co/55231a6491d06f74b990bdae5671666d" class="contact__form grid" method="POST">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" id="name" name="name" class="contact__input" required>
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="email" class="contact__label">Your Email</label>
+                                <input type="email" name="email" id="email" class="contact__input" required>
+                            </div>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="project-contact" class="contact__label">Subject</label>
+                            <input type="text" id="project-contact" name="_subject" class="contact__input" required>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="message-contact" class="contact__label">Message</label>
+                            <textarea name="message" cols="0" rows="7" id="message-contact" class="contact__input" required></textarea>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://njabulosibiya.co.za/success.html">
+                        </div>
+                        
+                        <div>
+                            <button class="button button--flex" type="submit" style="border-color: transparent;">
+                                Send Message<i class="uil uil-message button__icon"></i>
+                            </button>
+                        </div>
+
+                        <!--<div>
+                            <button style="border-color: transparent;">
+                            <a href="#" class="button button--flex">Send Message<i class="uil uil-message button__icon"></i></a>
+                        </button>
+                        </div>-->
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Njabulo</h1>
+                    <span class="footer__subtitle">Computer Science Student</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.github.com/njabuloksibiya/" class="footer__social" target="_blank"  class="footer__social">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Njabulo Sibiya. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <!--==================== SCROLL TOP (old)====================--
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scroll__icon"></i>
+    </a>-->
+
+    <!--==================== HIDE ANCHOR LINK IN URL =================
+    script is not unversal(not in main.js) because doing so breaks the links in
+    the other pages which need a custom script to allow them to link to sections of 
+    other pages.-->
+    <script>
+        var links = document.getElementsByTagName("a");
+        //Browse the previously created array
+        Array.prototype.forEach.call(links, function(elem, index) {
+        //Get the hyperlink target and if it refers to an id go inside condition
+        var elemAttr = elem.getAttribute("href");
+        if(elemAttr && elemAttr.includes("#")) {
+            //Replace the regular action with a scrolling to target on click
+            elem.addEventListener("click", function(ev) {
+            ev.preventDefault();
+            //Scroll to the target element using replace() and regex to find the href's target id
+            document.getElementById(elemAttr.replace(/#/g, "")).scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest"
+                });
+            });
+        }
+        });
+    </script>
+    
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+
+    <!--==================== back-to-top JS ====================-->
+    <script src="assets/js/back-to-top.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

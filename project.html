@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal website">
+  	<meta name="keywords" content="portfolio, Njabulo, Njabulo Sibiya, Pesrsonal Website">
+ 	<meta name="author" content="Njabulo Sibya & Brimcode">
+    
+    <!--==================== FAVICON ====================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/about-me.css">
+    <link rel="stylesheet" href="assets/css/back-to-top.css">
+
+    <!--=============== IMAGE VIEWER ===========-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+
+    <title>Njabulo Sibiya | Project Name</title>
+</head>
+
+<body>
+
+    <div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Njabulo</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#portfolio" class="nav__link active-link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#contact" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Contact Me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!--Theme change button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section">
+    <div class="content-wrapper">
+        <aside>
+            <div class="profile-img-wrapper">
+                <img src="assets/img/portfolio-details.jpg" alt="project preview image">
+            </div>
+            <h1 class="profile-name">Project Name Placeholder</h1>
+            <div class="text-center">
+                <span class=" badge-white badge-pill profile-designation">Project Subtitle</span>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/njabulosibiya" target="_blank" class="home__social-icon" title="Project preview">
+                    <i class="uil uil-images"></i></a>
+                <a href="https://github.com/njabulosibiya" target="_blank" class="home__social-icon" title="Video Demo">
+                        <i class="uil uil-youtube"></i>
+                </a>
+                <a href="https://github.com/njabulosibiya" target="_blank" class="home__social-icon">
+                    <i class="uil uil-layers-alt"></i></a>
+            </div>
+
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                            <a class="button"> Download Build <i class="uil uil-file-download button__icon"></i></a>
+                            <a class="button" style="margin-top: 20px;"> Source Code <i class="uil uil-brackets-curly button__icon"></i></a>
+                            <a class="button" style="margin-top: 20px;"> Design Mockup <i class="uil uil-arrow-up-right button__icon"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">PROJECT DETAILS</h5>
+                        <!--====================== SKILLS 1 =============================-->
+                        <div class="skills__content skills__open">
+                            <div class="about__skills__list grid" style="row-gap: 0.25rem;">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Code:</h3>
+                                        <div class="skills__number">C++, QML & SQL</div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Data:</h3>
+                                        <div class="skills__number">Open Weather Map API, IP-API.com Geolocation API</div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Completed:</h3>
+                                        <div class="skills__number">17 Aug 2018</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Updated:</h3>
+                                        <div class="skills__number">03 Jan 2022</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Version:</h3>
+                                        <div class="skills__number">v1.1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--<div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">Hobbies</h5>
+                        <p>Music</p>
+                        <p>Soccer</p>
+                        <p>Biking</p>
+                        <p>Reading</p>
+                        <p>Hiking</p>
+                    </div>
+                </div>
+            </div>-->
+
+        </aside>
+
+        <main>
+            <!--====================== PROJECT DESCRIPTION ======================-->
+            <section class="intro-section">
+                <h1 class="skills__title">A little about the project...</h1>
+                <p style="text-align: justify;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+                    et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+                    sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
+                    quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui 
+                    in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+                    voluptas nulla pariatur?
+                <br></br>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+                    et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+                    sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
+                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
+                    quaerat voluptatem.</p>
+            </section>
+
+            <!--====================== PROJECT INFO =============================-->
+            <div class="skills__content skills__open">
+                <div class="skills__header">
+                    <i class="uil uil-brackets-curly skills__icon"></i>
+
+                    <div>
+                        <h1 class="skills__title">architecture</h1>
+                        <span class="skills__subtitle">The design & coding process</span>
+                    </div>
+
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+
+                <div class="skills__list grid" style="padding-left: 0;">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">Design</h3>
+                            <div class="skills__number">application architecture</div>
+                        </div>
+                        <p style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit.
+                        </p>
+                    </div>
+                    <div class="skills__bar">
+                        <div class="skills__percentage skills__cpp" style="width: 100%;"></div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">API's</h3>
+                            <div class="skills__number">all api's used</div>
+                        </div>
+                        <p style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit.
+                        </p>
+                    </div>
+                    <div class="skills__bar">
+                        <div class="skills__percentage skills__cpp" style="width: 100%;"></div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">Front End</h3>
+                            <div class="skills__number">User Interface</div>
+                        </div>
+                        <p style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit.
+                        </p>
+                    </div>
+                    <div class="skills__bar">
+                        <div class="skills__percentage skills__cpp" style="width: 100%;"></div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">Back End</h3>
+                            <div class="skills__number">logic & algorithms</div>
+                        </div>
+                        <p style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit.
+                        </p>
+                    </div>
+                    <div class="skills__bar">
+                        <div class="skills__percentage skills__cpp" style="width: 100%;"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--====================== PROJECT INFO 2 ===========================-->
+            <div class="skills__content skills__close">
+                <div class="skills__header">
+                    <i class="uil uil-info-circle skills__icon"></i>
+
+                    <div>
+                        <h1 class="skills__title">Other info</h1>
+                        <span class="skills__subtitle">Other relevant info</span>
+                    </div>
+
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+
+                <div class="skills__list grid" style="padding-left: 0;">
+                    <div class="skills__data">
+                        <div class="skills__titles">
+                            <h3 class="skills__name">Acknowledgements</h3>
+                            <div class="skills__number">people...</div>
+                        </div>
+                        <p style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit.
+                        </p>
+                    </div>
+                    <div class="skills__bar">
+                        <div class="skills__percentage skills__cpp" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--====================== PROJECT PREVIEW =============================-->
+            <div class="skills__content skills__close">
+                <div class="skills__header">
+                    <i class="uil uil-images skills__icon"></i>
+
+                    <div>
+                        <h1 class="skills__title">Project Preview</h1>
+                        <span class="skills__subtitle"> Preview images</span>
+                    </div>
+
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+
+                <div class="skills__list grid" style="padding-left: 0;">      
+                    <!--======image veiwer======-->
+                    <div id="fancybox__container"> <!-- to wrap both groups -->
+                            <div class="imglist">
+                            <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images"><img src="https://source.unsplash.com/ndjyaOp0fOc/240x160"></a>
+                            <a href="https://source.unsplash.com/A-fubu9QJxE/1500x1000" data-fancybox="images"><img src="https://source.unsplash.com/A-fubu9QJxE/240x160"></a>
+                            <a href="https://source.unsplash.com/rkkr6-2I4sg/1500x1000" data-fancybox="images"><img src="https://source.unsplash.com/rkkr6-2I4sg/240x160"></a>
+                            <a href="https://source.unsplash.com/mr_Tg4SI66A/1500x1000" data-fancybox="images"><img src="https://source.unsplash.com/mr_Tg4SI66A/240x160"></a>
+                            <a href="https://source.unsplash.com/YEsedBccUEA/1500x1000" data-fancybox="images"><img src="https://source.unsplash.com/YEsedBccUEA/240x160"></a>
+                            <a href="https://source.unsplash.com/Hw62tzAkXXE/1500x1000" data-fancybox="images"><img src="https://source.unsplash.com/Hw62tzAkXXE/240x160"></a>
+                            </div>
+                    </div>
+
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/f1aT7T5Ax7w" frameborder="0" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--<section class="resume-section">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Education</h2>
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2116 - 2120</span>
+                                <h6 class="time-line-item-title">Graduated High School</h6>
+                                <p class="time-line-item-subtitle">CERTIFICATE, HIGH SCHOOL</p>
+                                <p>Mauris sed do eiusmod tempormagna sapien, pharetra consectetur fringilla
+                                    vitae, interdum sed.</p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2121 - 2125</span>
+                                <h6 class="time-line-item-title">Computer Science at University of Future</h6>
+                                <p class="time-line-item-subtitle">UNIVERSITY</p>
+                                <p>Mauris magna sapien, pharetra consectetur fringilla
+                                    vitae, interdum sed tortor.
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2189 - 9999</span>
+                                <h6 class="time-line-item-title">Living in Heaven</h6>
+                                <p class="time-line-item-subtitle">FULL TIME</p>
+                                <p>Mauris magna sapien, pharetra consectetur fringilla
+                                    vitae, interdum sed tortor.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Experience</h2>
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2125 - 2130</span>
+                                <h6 class="time-line-item-title">Living at Home</h6>
+                                <p class="time-line-item-subtitle">Unemployed</p>
+                                <p>Mauris magna sapien, pharetra consectetur fringilla
+                                    vitae, interdum sed
+                                    tortor.</p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2130 - 2145</span>
+                                <h6 class="time-line-item-title">Still Unemployed</h6>
+                                <p class="time-line-item-subtitle">Home Inc.</p>
+                                <p>Mauris magna sapien, pharetra consectetur fringilla
+                                    vitae, interdum sed
+                                    tortor.
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2146 - 2169</span>
+                                <h6 class="time-line-item-title">CFO at Apple Inc.</h6>
+                                <p class="time-line-item-subtitle">In my Dreams</p>
+                                <p>Mauris magna sapien, pharetra consectetur fringilla
+                                    vitae, interdum sed
+                                    tortor.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>-->
+
+            <!--<section class="services-section">
+                <h2 class="section-title">Interests</h2>
+                <div class="row">
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <i class="uil uil-layers-alt button__icon"></i>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Front-End UI/UX Development</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt. Incididunt consectetur </p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <i class="uil uil-robot button__icon"></i>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Machine Learning & AI</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <i class="uil uil-streering button__icon"></i>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Automation</h5>
+                            <p>Lorem ipsum consectetur incididunt dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <i class="uil uil-eye button__icon"></i>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Computer Vision</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing dolor, sed do eiusmod 
+                                tempor amet incididunt. Sed
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <i class="uil uil-database button__icon"></i>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Databases</h5>
+                            <p>Lorem ipsum dolor incididunt sit amet, ipsum dolor consectetur adipiscing elit, sed do eiusmod 
+                                tempor dolor incididunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <i class="uil uil-cloud-database-tree button__icon"></i>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Server-Client Applications</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt amet dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+
+        </main>
+    </div>
+    </section>
+    
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== back-to-top JS ====================-->
+    <script src="assets/js/back-to-top.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

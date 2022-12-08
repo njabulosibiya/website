@@ -1,0 +1,264 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 3rem;
+
+    --first-hue: 250;
+    --sat: 66%;
+    --lig: 75%;
+    --second-hue: 219;
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+    /* HSL color mode */
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+/*==================== Portfolio Page ====================*/
+
+.project__details {
+    padding: var(--mb-0-25);
+}
+
+.project__info{
+  background:var(--container-color);
+  margin-top: var(--mb-1-5);
+  margin-bottom: var(--mb-1-5);
+  padding:  1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
+}
+
+.project__details 
+.project__info
+.list li{
+    margin-bottom:7px;
+    font-weight:normal;
+    font-size: var(--normal-font-size);
+}
+
+.project__details
+.project__info
+.list li span{
+  font-family: var(--body-font);
+  color:var(--text-color);
+  font-size:var(--normal-font-size);
+  width:97px;
+  display:inline-block
+}
+
+/*image display*/
+#fancybox__container {
+    display: flex; /* displays children inline (side by side) */
+    width: 100%; /* adjust to your needs */
+    max-width: 100%; /* for responsiveness */
+    margin: 0 auto; /* horizontal centering on the page */
+}
+
+.skills__list
+.imglist {
+    display: flex; /* displays a's (img's) inline */
+    flex-wrap: wrap; /* enables wrapping */
+}
+
+.skills__list
+.imglist > a {
+    flex: 1 1 calc(33.33% - 6px); /* each anchor tag (img) takes 33.33% of the parents (.imglist) width, that's why it wraps after every third anchor tag (img) / why -6px? because of the 2 x 3px margin (left & right) */
+    margin: 3px; /* adjust to your needs */
+    /* flex: grow(enabled (1)) shrink(enabled (1)) basis/width (calc(33.33% - 6px)); */
+}
+
+.skills__list
+img { /* for responsiveness */
+    display: block;
+    max-width: 100%;
+    max-height: 100vh;
+}
+  
+/* addition (recommended) */
+@media screen and (max-width: 568px) { /* adjust the "breaking-point" to your needs */
+    #fancybox__container {
+      flex-direction: column; /* stacks children (group1 & group2) vertically */
+    }
+}
+
+
+
+/*==================== NEW BACK TO TOP BUTTON ====================*/
+
+@keyframes border-transform {/*was @-webkit-keyframes*/
+	0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
+	14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; }
+	28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; }
+	42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; }
+	56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; }
+	70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
+	84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; }
+  }
+  
+  .progress-wrap {
+	position: fixed;
+	right: 30px;
+	bottom: 60px;
+	height: 50px;
+	width: 50px;
+	cursor: none;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  
+  .progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+  }
+  
+  .progress-wrap::after {
+	position: absolute;
+	content: '\279C';
+	transform: rotate(270deg);
+	text-align: center;
+	line-height: 50px;
+	font-weight: 100;
+	font-size: 29px;
+	color: var(--text-color);
+	left: 11;
+	top: 0;
+	height: 50px;
+	width: 50px;
+	display: block;
+	z-index: 1;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  
+  .progress-wrap:hover::after {
+	opacity: 0;
+  }
+  
+  .progress-wrap::before {
+	position: absolute;
+	content: '\279C';
+	transform: rotate(270deg);
+	text-align: center;
+	line-height: 50px;
+	font-weight: 100;
+	font-size: 29px;
+	opacity: 0;
+	background: var(--first-color);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	left: 11;
+	top: 0;
+	height: 50px;
+	width: 50px;
+	display: block;
+	z-index: 2;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  
+  .progress-wrap:hover::before {
+	opacity: 1;
+  }
+  
+  .progress-wrap svg path {
+	fill: none;
+  }
+  
+  .progress-wrap svg.progress-circle path {
+	stroke:var(--text-color);
+	stroke-width: 4;
+	box-sizing: border-box;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
