@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/about-me.css">
     <link rel="stylesheet" href="assets/css/back-to-top.css">
+    <link rel="stylesheet" href="assets/css/download-button.css">
+
 
     <!--=============== IMAGE VIEWER ===========-->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
@@ -105,10 +107,13 @@
 
             <div class="widget card">
                 <div class="card-body">
-                    <div class="widget-content">
-                            <a class="button"> Download Build <i class="uil uil-file-download button__icon"></i></a>
-                            <a class="button" style="margin-top: 20px;"> Design Mockup <i class="uil uil-arrow-up-right button__icon"></i></a>
-                    </div>
+                    <select data-menu>
+                        <option>windows 10 x32</option>
+                        <option>windows 10 x64</option>
+                        <option selected>Download</option>
+                        <option>Mac</option>
+                        <option>Android</option>
+                    </select>
                 </div>
             </div>
 
@@ -487,6 +492,12 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+    <!--==================== DOWNLOAD BUTTON JS ====================-->
+    <script src="assets/js/download-buttton.js"></script>
+    
+    <!--==================== DOWNLOAD SELECTOR JS ====================-->
+    <script src="assets/js/download-selection.js"></script>
 </body>
 
 </html>
