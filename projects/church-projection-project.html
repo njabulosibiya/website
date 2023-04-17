@@ -9,21 +9,19 @@
  	<meta name="author" content="Njabulo Sibya & Brimcode">
     
     <!--==================== FAVICON ====================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
 
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/about-me.css">
-    <link rel="stylesheet" href="assets/css/back-to-top.css">
-    <link rel="stylesheet" href="assets/css/download-button.css">
-
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/about-me.css">
+    <link rel="stylesheet" href="../assets/css/back-to-top.css">
 
     <!--=============== IMAGE VIEWER ===========-->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
@@ -31,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
 
 
-    <title>Njabulo Sibiya | Website App</title>
+    <title>Njabulo Sibiya | Project Name</title>
 </head>
 
 <body>
@@ -44,31 +42,31 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">Njabulo</a>
+            <a href="../index.html" class="nav__logo">Njabulo</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">
+                        <a href="../index.html" class="nav__link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#about" class="nav__link">
+                        <a href="../index.html#about" class="nav__link">
                             <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#skills" class="nav__link">
+                        <a href="../index.html#skills" class="nav__link">
                             <i class="uil uil-file-alt nav__icon"></i> Skills
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#portfolio" class="nav__link active-link">
+                        <a href="../index.html#portfolio" class="nav__link active-link">
                             <i class="uil uil-scenery nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#contact" class="nav__link">
+                        <a href="../index.html#contact" class="nav__link">
                             <i class="uil uil-estate nav__icon"></i> Contact Me
                         </a>
                     </li>
@@ -91,106 +89,36 @@
     <div class="content-wrapper">
         <aside>
             <div class="profile-img-wrapper">
-                <img src="assets/img/unavailable.png" alt="project preview image">
+                <img src="../assets/img/unavailable.png" alt="project preview image">
             </div>
-            <h1 class="profile-name">Website Application</h1>
+            <h1 class="profile-name">Church Projection</h1>
             <div class="text-center">
-                <span class=" badge-white badge-pill profile-designation">Website as application</span>
+                <span class=" badge-white badge-pill profile-designation">desktop application</span>
             </div>
 
             <div class="social-links">
                 <a href="https://github.com/njabulosibiya" target="_blank" class="home__social-icon" title="Project preview">
                     <i class="uil uil-github-alt"></i></a>
+                <a href="https://github.com/njabulosibiya" target="_blank" class="home__social-icon" title="Project preview">
+                    <i class="uil uil-images"></i>
+                </a>
                 <a href="https://github.com/njabulosibiya" target="_blank" class="home__social-icon" title="Video Demo">
-                    <i class="uil uil-youtube"></i></a>
+                        <i class="uil uil-youtube"></i>
+                </a>
+                <a href="https://github.com/njabulosibiya" target="_blank" class="home__social-icon">
+                    <i class="uil uil-layers-alt"></i></a>
             </div>
 
             <div class="widget card">
                 <div class="card-body">
-                    <select data-menu onchange="showDiv('div',this)" >
-                        <option value="1">windows 10 x32</option>
-                        <option value="2">windows 10 x64</option>
-                        <option value="0" selected>Download</option>
-                        <option value="3">Mac</option>
-                        <option value="4">Android</option>
-                    </select>
-
-
-
-                    
-                    <select name="name" id="framework" onchange="showDiv('div',this)" class="form-control" >
-                        <option value="0">YES</option>
-                        <option value="1">And</option>
-                        <option value="2">Win</option>
-                        <option value="3">Lin</option>
-                        <option value="4">MAc</option>
-                    </select>
-                    
-                    <!--INITIALLY DISPLAYED-->
-                    <div id="div0" style="display:block;">
-                        <!--DIIV DISPLAYS NOTHING-->
+                    <div class="widget-content">
+                        <select data-menu>
+                            <option>windows 10 x32</option>
+                            <option>windows 10 x64</option>
+                            <option selected>Download</option>
+                            <option>Mac</option>
+                        </select>
                     </div>
-
-                    <!--INITIALLY HIDING-->
-                    <div id="div1" style="display:none;">
-                        <a href="#about" target="_blank" class="button button--flex services__button" style="height: 40px; margin-top: 1.25rem; border-radius: 6px;">
-                            Android Download <i class="uil uil-android-alt button__icon"></i>
-                    </a></div>
-
-                    <div id="div2" style="display:none;">
-                    <a href="#about" target="_blank" class="button button--flex services__button" style="height: 40px; margin-top: 1.25rem;">
-                        Windows Download <i class="uil uil-windows button__icon"></i>
-                    </a></div>
-
-                    <div id="div3" style="display:none;">
-                    <a href="#about" target="_blank" class="button button--flex services__button" style="height: 40px; margin-top: 1.25rem;">
-                        Linux Download <i class="uil uil-linux button__icon"></i>
-                    </a></div>
-
-                    <div id="div4" style="display:none;">
-                    <a href="#about" target="_blank" class="button button--flex services__button" style="height: 40px; margin-top: 1.25rem;">
-                        Mac Download <i class="uil uil-apple-alt button__icon"></i>
-                    </a></div>
-
-                    <script>
-                        function showDiv(prefix,chooser) 
-                        {
-                                for(var i=0;i<chooser.options.length;i++) 
-                                {
-                                    var div = document.getElementById(prefix+chooser.options[i].value);
-                                    div.style.display = 'none';
-                                }
-                    
-                                const sb = document.querySelector('#framework');
-                    
-                                if(sb.selectedIndex == "0")
-                                {
-                                    displayDiv(prefix,"0");
-                                }
-                                if(sb.selectedIndex == "1")
-                                {
-                                    displayDiv(prefix,"1");
-                                }
-                                if(sb.selectedIndex == "2")
-                                {
-                                    displayDiv(prefix,"2");
-                                }
-                                if(sb.selectedIndex == "3")
-                                {
-                                    displayDiv(prefix,"3");
-                                }
-                                if(sb.selectedIndex == "4")
-                                {
-                                    displayDiv(prefix,"4");
-                                }
-                        }
-                    
-                        function displayDiv(prefix,suffix) 
-                        {
-                                var div = document.getElementById(prefix+suffix);
-                                div.style.display = 'block';
-                        }
-                    </script>
                 </div>
             </div>
 
@@ -204,35 +132,35 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Code:</h3>
-                                        <div class="skills__number">QML & C++</div>
+                                        <div class="skills__number">C++ & QML</div>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Data:</h3>
-                                        <div class="skills__number">Njabulosibiya.co.za, web scraped</div>
+                                        <h3 class="skills__name">Initiated:</h3>
+                                        <div class="skills__number">17 Apr 2023</div>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Completed:</h3>
-                                        <div class="skills__number">N/A</div>
+                                        <div class="skills__number">--</div>
                                     </div>
                                 </div>
                                 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Updated:</h3>
-                                        <div class="skills__number">12 Jan 2023</div>
+                                        <div class="skills__number">17 Apr 2023</div>
                                     </div>
                                 </div>
                                 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Version:</h3>
-                                        <div class="skills__number">v0.0.0</div>
+                                        <div class="skills__number">v0.0</div>
                                     </div>
                                 </div>
                             </div>
@@ -242,18 +170,14 @@
             </div>
 
 
-            <!--<div class="widget card">
+            <div class="widget card">
                 <div class="card-body">
                     <div class="widget-content">
-                        <h5 class="widget-title card-title">Hobbies</h5>
-                        <p>Music</p>
-                        <p>Soccer</p>
-                        <p>Biking</p>
-                        <p>Reading</p>
-                        <p>Hiking</p>
+                        <h5 class="widget-title card-title">development progress</h5>
+                        <p>Planning Stage</p>
                     </div>
                 </div>
-            </div>-->
+            </div>
 
         </aside>
 
@@ -261,21 +185,15 @@
             <!--====================== PROJECT DESCRIPTION ======================-->
             <section class="intro-section">
                 <h1 class="skills__title">A little about the project...</h1>
-                <p style="text-align: justify;"> This a desktop application of my website. Complete with layout 
-                    responsiveness and multithreading support for performance increase whilst maintaining low 
-                    resource utalization. The purpose of this is to provide an easy to moderate challange for myself. 
-                    This challange will mostly be on user interface design and programming. This is the first project
-                    I am doing after learning QML programming language. Not only does it challange my knowledge and
-                    understanding of QML and user interface design but it also acts as a 
-
+                <p style="text-align: justify;">The local church I go to is in no way a big church, with less than 150
+                    church members. The church uses all the church equipment you'd expect from a small church, microphones 
+                    for the singers, speakers speakers, keyboard etc, but one thing that we also have is a projection system.
+                    The church uses 2 Large TVs to display all the bible verses, the lyrics of the songs being sang and church 
+                    announcements and the like. Its very helpful, especially for lyrics, since its a multi ethnic church with a 
+                    variety of langueges spoken by the people, seeing the lyrics is convenient. I myself am responsible for displaying 
+                    the aforementioned.
                 <br></br>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
-                    et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
-                    sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
-                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
-                    quaerat voluptatem.</p>
+                    So, I already mentioned that it's my responsibility to project all the required </p>
             </section>
 
             <!--====================== PROJECT INFO =============================-->
@@ -297,18 +215,9 @@
                             <h3 class="skills__name">Design</h3>
                             <div class="skills__number">application architecture</div>
                         </div>
-                        <p style="text-align: justify; text-justify: inter-word;">Since the website is already live,
-                            I could just inspect its dimensions from chrome developer. However, I shall redesign it
-                            from scratch. The preffered UI design tool would be figma as it is free and offers great
-                            flexibility and easy when designing. The first stpe of the development of this application,
-                            of any application would be design. Not just for user interface but OOP design patterns as 
-                            well.<br></br>
-                            The application design process shall be divided into 2 processes that can be done concurrently.
-                            These are the UI as mentioned & the application logic. As C++ is currently the only language I 
-                            am well versed in, I shall utilize it.<br></br></p>
-                            <h3 class="skills__name">NOTE:</h3> <p>QML User Interface shall use primitize design patterns 
-                            as the knowledge of QML  is intermediate at best. Once higher level QML has been learnt, 
-                            application shall be updated.</p>
+                        <p style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit.
                         </p>
                     </div>
                     <div class="skills__bar">
@@ -320,8 +229,9 @@
                             <h3 class="skills__name">API's</h3>
                             <div class="skills__number">all api's used</div>
                         </div>
-                        <p style="text-align: justify; text-justify: inter-word;">QML - C++ API allowing
-                            QML to be bound to C++ objects. Second is C++ webscraper
+                        <p style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit.
                         </p>
                     </div>
                     <div class="skills__bar">
@@ -333,8 +243,9 @@
                             <h3 class="skills__name">Front End</h3>
                             <div class="skills__number">User Interface</div>
                         </div>
-                        <p style="text-align: justify; text-justify: inter-word;">Figma for design, QML for 
-                            implementation
+                        <p style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit.
                         </p>
                     </div>
                     <div class="skills__bar">
@@ -346,7 +257,9 @@
                             <h3 class="skills__name">Back End</h3>
                             <div class="skills__number">logic & algorithms</div>
                         </div>
-                        <p style="text-align: justify; text-justify: inter-word;">C++
+                        <p style="text-align: justify; text-justify: inter-word;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit.
                         </p>
                     </div>
                     <div class="skills__bar">
@@ -562,19 +475,16 @@
     </section>
     
     <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== back-to-top JS ====================-->
-    <script src="assets/js/back-to-top.js"></script>
+    <script src="../assets/js/back-to-top.js"></script>
+
+    <!--==================== DOWNLOAD SELECTOR JS ====================-->
+    <script src="../assets/js/download-selection.js"></script>
 
     <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
-
-    <!--==================== DOWNLOAD BUTTON JS ====================-->
-    <script src="assets/js/download-buttton.js"></script>
-    
-    <!--==================== DOWNLOAD SELECTOR JS ====================-->
-    <script src="assets/js/download-selection.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
