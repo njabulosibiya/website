@@ -172,3 +172,21 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*==================== PREVENTS IMAGES FROM BEING DOWNLOADED BY NORMIES====================*/
+//Disables right-clicking on all images.
+let allImages = document.querySelectorAll("img");
+allImages.forEach((value)=>{
+    value.oncontextmenu = (e)=>{
+        e.preventDefault();
+    }
+})
+
+//This trick prevents from the right click on all img. 
+$(document).ready(function()
+{
+    $('img').bind('contextmenu', function(e){
+        return false;
+    }); 
+});
