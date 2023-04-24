@@ -1397,9 +1397,11 @@ img{
   
   
   .workcontainer {
+      /* the below sets width and height to overflow once a specific number of
+          cards is reached. Once reached a scrollbar will appear.
       max-width: 768px;
       max-height: 1700px;
-      overflow-y: auto;
+      overflow-y: auto;*/
       margin-left: var(--mb-1-5);
       margin-right: var(--mb-1-5);
   }

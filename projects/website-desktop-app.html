@@ -9,20 +9,21 @@
  	<meta name="author" content="Njabulo Sibya & Brimcode">
     
     <!--==================== FAVICON ====================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
 
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/about-me.css">
-    <link rel="stylesheet" href="assets/css/back-to-top.css">
-    <link rel="stylesheet" href="assets/css/download-button.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/about-me.css">
+    <link rel="stylesheet" href="../assets/css/back-to-top.css">
+    <link rel="stylesheet" href="../assets/css/modal-experimental.css">
+    <link rel="stylesheet" href="../assets/css/download-button.css">
 
 
     <!--=============== IMAGE VIEWER ===========-->
@@ -41,34 +42,45 @@
 			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
 		</svg>
 	</div>
+
+
+    <div id="myModal" class="modal fade-in">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Disclaimer</h2>
+            <p>This page is an experimental page for a new feature to be implemented, as such, all information on this page is 
+                nothing but place holder elements your experience may not be the best.</p>
+        </div>
+    </div>
+
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">Njabulo</a>
+            <a href="../index.html" class="nav__logo">Njabulo</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">
+                        <a href="../index.html" class="nav__link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#about" class="nav__link">
+                        <a href="../index.html#about" class="nav__link">
                             <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#skills" class="nav__link">
+                        <a href="../index.html#skills" class="nav__link">
                             <i class="uil uil-file-alt nav__icon"></i> Skills
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#portfolio" class="nav__link active-link">
+                        <a href="../index.html#portfolio" class="nav__link active-link">
                             <i class="uil uil-scenery nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#contact" class="nav__link">
+                        <a href="../index.html#contact" class="nav__link">
                             <i class="uil uil-estate nav__icon"></i> Contact Me
                         </a>
                     </li>
@@ -91,7 +103,7 @@
     <div class="content-wrapper">
         <aside>
             <div class="profile-img-wrapper">
-                <img src="assets/img/unavailable.png" alt="project preview image">
+                <img src="../assets/img/unavailable.png" alt="project preview image">
             </div>
             <h1 class="profile-name">Website Application</h1>
             <div class="text-center">
@@ -204,14 +216,14 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Code:</h3>
-                                        <div class="skills__number">QML & C++</div>
+                                        <div class="skills__number">--</div>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Data:</h3>
-                                        <div class="skills__number">Njabulosibiya.co.za, web scraped</div>
+                                        <h3 class="skills__name">Initiated:</h3>
+                                        <div class="skills__number">--</div>
                                     </div>
                                 </div>
 
@@ -225,14 +237,14 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Updated:</h3>
-                                        <div class="skills__number">12 Jan 2023</div>
+                                        <div class="skills__number">--</div>
                                     </div>
                                 </div>
                                 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Version:</h3>
-                                        <div class="skills__number">v0.0.0</div>
+                                        <div class="skills__number">--</div>
                                     </div>
                                 </div>
                             </div>
@@ -422,7 +434,7 @@
             </div>
             
 
-            <!--<section class="resume-section">
+            <section class="resume-section">
                 <div class="row">
                     <div class="col-lg-6">
                         <h2 class="section-title">Education</h2>
@@ -484,9 +496,9 @@
                         </ul>
                     </div>
                 </div>
-            </section>-->
+            </section>
 
-            <!--<section class="services-section">
+            <section class="services-section">
                 <h2 class="section-title">Interests</h2>
                 <div class="row">
                     <div class="media service-card col-lg-6">
@@ -555,26 +567,28 @@
                         </div>
                     </div>
                 </div>
-            </section>-->
+            </section>
 
         </main>
     </div>
     </section>
     
     <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== back-to-top JS ====================-->
-    <script src="assets/js/back-to-top.js"></script>
+    <script src="../assets/js/back-to-top.js"></script>
 
     <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <!--==================== DOWNLOAD BUTTON JS ====================-->
-    <script src="assets/js/download-buttton.js"></script>
+    <script src="../assets/js/download-buttton.js"></script>
+    
+    <script src="../assets/js/modal-experimental.js"></script>
     
     <!--==================== DOWNLOAD SELECTOR JS ====================-->
-    <script src="assets/js/download-selection.js"></script>
+    <script src="../assets/js/download-selection.js"></script>
 </body>
 
 </html>
