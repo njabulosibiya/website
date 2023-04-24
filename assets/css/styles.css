@@ -143,6 +143,9 @@ a{
 img{
     max-width: 100%;
     height: auto;
+
+    /*prevent images from being dragged to tab bar and viewing image seperately to download it*/
+    pointer-events: none;
 }
 
 
