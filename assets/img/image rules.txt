@@ -1,0 +1,10 @@
+Index.html
+In portfolio section, images must have dimensions: 640 x 420 (WxH)
+
+
+Project/*.html
+Aside image must have dimensions: 291x173 (WxH)
+
+Project/*.html
+Images in project preview, grid image must be: ???
+enlarged images can be as big as possible
