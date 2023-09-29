@@ -304,8 +304,10 @@ main {
 main {
   padding: 36px 60px 24px;
   background-color: var(--container-color);
-  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1) ;
-  border-radius: 1rem; }
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
+  border-radius: 1rem;
+  transition: var(--transition-duration);
+  }
   @media (max-width: 767px) {
     main {
       padding-left: 20px;
