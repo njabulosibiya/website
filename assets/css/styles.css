@@ -547,7 +547,7 @@ img{
 }
 
 .skills__cpp{
-    width: 85%;
+    width: 60%;
 }
 
 .skills__python{
@@ -555,7 +555,7 @@ img{
 }
 
 .skills__qml{
-    width: 70%;
+    width: 80%;
 }
 
 .skills__mysql{
