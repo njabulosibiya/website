@@ -27,9 +27,6 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-    /* theme transition animation duration */
-    --transition-duration: 0.3s;
-
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
 
@@ -128,13 +125,11 @@ body{
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
-    transition: var(--transition-duration);
 }
 
 h1,h2,h3,h4{
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
-    transition: var(--transition-duration);
 }
 
 ul{
@@ -143,7 +138,6 @@ ul{
 
 a{
     text-decoration: none;
-    transition: var(--transition-duration);
 }
 
 img{
@@ -194,7 +188,6 @@ img{
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
-    transition: var(--transition-duration);
 }
 
 /*==================== NAV ====================*/
@@ -211,7 +204,6 @@ img{
 .nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-medium);
-    transition: var(--transition-duration);
 }
 
 .nav__logo:hover{
@@ -363,7 +355,6 @@ img{
     color: var(--title-color);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
-    transition: var(--transition-duration);
 }
 
 .home__scroll-arrow{
@@ -457,7 +448,6 @@ img{
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
-    transition: var(--transition-duration);
 }
 
 .about__info-name{
@@ -876,13 +866,11 @@ img{
     background-color: var(--input-color);
     border-radius: .5rem;
     padding: .75rem 1rem .25rem;
-    transition: var(--transition-duration);
 }
 
 .contact__label{
     font-size: var(--smaller-font-size);
     color: var(--title-color);
-    transition: var(--transition-duration);
 }
 
 .contact__input{
@@ -894,7 +882,6 @@ img{
     border: none;
     outline: none;
     padding: .25rem .5rem .5rem 0;
-    transition: var(--transition-duration);
 }
 /*==================== FOOTER ====================*/
 .footer{
@@ -908,7 +895,6 @@ img{
 .footer__bg{
     background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
-    transition: var(--transition-duration);
 }
 
 .footer__title{
@@ -1280,7 +1266,6 @@ img{
         padding: 3rem 2.5rem 0;
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
-        transition: var(--transition-duration);
     }
     .project__data{
         padding-top: .8rem;
@@ -1373,14 +1358,12 @@ img{
     padding: 0.25rem 0.75rem;
     font-weight: var(--font-medium);
     border-radius: 1rem;
-    transition: var(--transition-duration);
   }
   .work__card {
     background-color: var(--container-color);/*was --containe-color*/
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
-    transition: var(--transition-duration);
+    box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1) ;
   }
   .work__img {
     border-radius: 1rem;
@@ -1562,9 +1545,7 @@ img{
     word-wrap: break-word;
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 1rem;
-    transition: var(--transition-duration);
-    }
+    border-radius: 1rem; }
     .card > hr {
       margin-right: 0;
       margin-left: 0; }
@@ -1826,9 +1807,7 @@ img{
   .badge-white {
     color: var(--title-color);
     background-color: var(--container-color);
-    box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
-    transition: var(--transition-duration);
-    }
+    box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1) ; }
     a.badge-white:hover, a.badge-white:focus {
       color: var(--text-color);
       background-color: var(--container-color); }
