@@ -469,6 +469,41 @@ img{
     row-gap: 0;
 }
 
+
+/*============= Box Skills ===================*/
+
+.skills__box__data {
+  text-align: center;
+}
+
+.skills__box__info {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+.skills__box__box {
+  background-color: var(--container-color);
+  border-radius: .75rem;
+  padding: .75rem .5rem;
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1) ;
+}
+
+.skills__box__icon {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;    
+}
+
+.skills__box__subtitle {
+  font-size: var(--smaller-font-size);
+}
+
+.skills__box__description {
+  margin-bottom: 2rem;
+}
+
 .skills__header{
     display: flex;
     align-items: center;
@@ -1067,6 +1102,23 @@ img{
   }
 
 /*==================== MEDIA QUERIES ====================*/
+/* For tiny devices (layout for skills cards) */
+@media screen and (min-width: 350px){
+  .skills__box__info {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills__box__box {
+    column-gap: 1rem;
+  }
+
+  .skills__title{
+      font-size: var(--normal-font-size);
+  }
+
+
+}
 /* For small devices */
 @media screen and (max-width: 350px){
     .container{
@@ -1089,10 +1141,15 @@ img{
         width: 180px;
     }
 
-    .skills__title{
-        font-size: var(--normal-font-size);
-    }
+  .skills__box__info {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
+.skills__box__box {
+    column-gap: 1rem;
+  }    
+    
     .qualification__data{
         gap: .5rem;
     }
@@ -1132,6 +1189,17 @@ img{
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    
+    .skills__box__info {
+      grid-template-columns: repeat(4, 140px);
+      justify-content: center;
+  }
+
+  .skills__box__description {
+      padding: 0 5rem;
+  }
+
 
     .qualification__sections{
         display: grid;
@@ -1206,6 +1274,27 @@ img{
     .home__scroll-button{
         margin-left: 3rem;
     }
+
+    .skills__box__data {
+      text-align: initial;
+  }
+
+  .skills__box__info {
+      justify-content: center;
+      grid-auto-columns: max-content;
+  }
+
+  .skills__box__box {
+      text-align: center;
+      padding: 1rem 1.25rem;
+  }
+
+  .skills__box__description {
+      padding: 0 4rem 0 0;
+      margin-bottom: 2.5rem;
+  }
+
+
 
     .about__container{
         column-gap: 5rem;
@@ -1303,6 +1392,12 @@ img{
     .home__social{
         transform: translateX(-6rem);
     }
+
+    
+  .skills__box__info {
+    justify-content: center;
+}
+
 
     .services__container{
         grid-template-columns: repeat(3, 238px);
